@@ -22,6 +22,13 @@
         <sonar.organization>emilancius</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>cosybox.unique-id</id>
+            <name>cosybox packages</name>
+            <url>https://maven.pkg.github.com/emilancius/unique-id</url>
+        </repository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
