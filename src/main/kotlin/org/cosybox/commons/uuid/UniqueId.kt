@@ -5,7 +5,9 @@ import java.util.*
 object UniqueId {
 
     /**
-     * Generates random upper-case v4 uuid.
+     * @since 1.0.0
+     *
+     * Generates random upper-case version 4 uuid.
      */
     fun generate(): String = UUID.randomUUID().toString().toUpperCase()
 }
