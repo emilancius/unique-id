@@ -30,8 +30,8 @@
     </licenses>
     <distributionManagement>
         <repository>
-            <id>cosybox.unique-id</id>
-            <name>cosybox.unique-id</name>
+            <id>github</id>
+            <name>GitHub cosybox Apache maven packages</name>
             <url>https://maven.pkg.github.com/emilancius/unique-id</url>
         </repository>
     </distributionManagement>
