@@ -22,10 +22,16 @@
         <sonar.organization>emilancius</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/emilancius/unique-id/blob/master/LICENSE</url>
+        </license>
+    </licenses>
     <distributionManagement>
         <repository>
             <id>cosybox.unique-id</id>
-            <name>cosybox packages</name>
+            <name>cosybox.unique-id</name>
             <url>https://maven.pkg.github.com/emilancius/unique-id</url>
         </repository>
     </distributionManagement>
