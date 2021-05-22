@@ -1,7 +1,6 @@
 package org.cosybox.commons.uuid
 
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 class UniqueIdSpec {
@@ -16,5 +15,16 @@ class UniqueIdSpec {
 
         assertEquals(36, uniqueId.length)
         assertTrue(uniqueId.matches(Regex(UPPER_CASE_UUID_V4_REGEX)))
+    }
+
+    @Test
+    fun `Check passes in case provided input is upper-case version 4 uuid`() {
+        assertTrue(UniqueId.isUniqueId("DCAA1BE9-3D1A-4F7A-9D22-AF0840A2DD8D"))
+    }
+
+    @Test
+    fun `Check does not pass in case provided input is not upper-case version 4 uuid`() {
+        assertFalse(UniqueId.isUniqueId(""))
+        assertFalse(UniqueId.isUniqueId("ee9334cc-928c-4904-878c-b3ce5c8dd73e"))
     }
 }
