@@ -30,7 +30,7 @@
     </licenses>
     <distributionManagement>
         <repository>
-            <id>cosybox.unique-id</id>
+            <id>cosybox</id>
             <name>cosybox.unique-id</name>
             <url>https://maven.pkg.github.com/emilancius/unique-id</url>
         </repository>
